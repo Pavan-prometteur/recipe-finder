@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./recipe.css">
+</head>
+<body>
+    <div class="container">
+        <div class="searchbox">
+            <input type="text" class="input-value">
+            <button type="button" id="btn">search</button>
+        </div>
+        <div class="recipe-container"></div>
+    </div>
+    <div class="recipe-instructions-overlay" id="recipeInstructionsOverlay">
+        <div class="recipe-instructions-content">
+            <span class="close-btn" id="closeBtn">&times;</span>
+            <div class="recipe-instructions"></div>
+        </div>
+    </div>
+    <script type="module" src="./recipe.js"></script>
+</body>
+</html>
