@@ -18,8 +18,9 @@ function generateRecipeHTML(recipes) {
 
 function showRecipe(index) {
     const instructions = recipe[index].instructions;
+    const recipeTitle =recipe[index].title;
     const overlay = document.getElementById('recipeInstructionsOverlay');
-    document.querySelector('.recipe-instructions').innerHTML = `<p>${instructions}</p>`;
+    document.querySelector('.recipe-instructions').innerHTML = `<p><h5>Instructions for ${recipeTitle}</h5>${instructions}</p>`;
     overlay.style.display = 'flex';
 }
 
@@ -27,6 +28,7 @@ function closeRecipe() {
     const overlay = document.getElementById('recipeInstructionsOverlay');
     overlay.style.display = 'none';
 }
+
 
 function addImageClickListeners() {
     document.querySelectorAll('.recipe-item img').forEach(img => {
@@ -39,6 +41,8 @@ function addImageClickListeners() {
 
 document.querySelector('.recipe-container').innerHTML = generateRecipeHTML(recipe);
 addImageClickListeners();
+
+
 
 document.getElementById('btn').addEventListener('click', () => {
     let ing = document.querySelector('.input-value').value;
