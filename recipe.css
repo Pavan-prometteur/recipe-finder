@@ -7,9 +7,6 @@
     height: 100%;
 }
 
-body{
-    background-color: lightcoral;
-}
 .searchbox {
     display: flex;
     justify-content: center;
@@ -36,6 +33,7 @@ body{
     height: 500px;
     color: white;
     background-color: lightgreen;
+    box-shadow: 5px 5px 5px lightslategray;
 }
 
 .recipe-item img {
